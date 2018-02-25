@@ -92,8 +92,8 @@ hr {
 }
 
 .header-button-custom {
-	height: 20%;
-	width: 20%;
+	height: 50px;
+	width: 150px;
 }
 
 @keyframes fa-color-change { 0% { color: white; } 50% { color: #8c6a06 ; } 100% { color: white}}
