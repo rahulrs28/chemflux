@@ -91,9 +91,16 @@ hr {
 	margin: 1% -1%;
 }
 
-.learn-more-custom {
-	margin-top: 14%;
-	margin-left: 28%;
+.header-button-custom {
+	height: 20%;
+	width: 20%;
+}
+
+@keyframes fa-color-change { 0% { color: white; } 50% { color: #8c6a06 ; } 100% { color: white}}
+
+.fa-design {
+	animation: fa-color-change 3s infinite;
+	/*color: #2e6da4;*/
 }
 /* Navigation */
 #nav {
@@ -158,7 +165,7 @@ hr {
 	background-color: #121d1f;
 	border-color: #121d1f;
 	padding: 10px 20px;
-	margin: 14% 28%;
+	margin: 1% 28%;
 	font-size: 16px;
 	border-radius: 0;
 }
@@ -187,16 +194,16 @@ hr {
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes opacitySetter {
 	0% { opacity:1; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 0%), url(../img/ChemicalPlant_7.jpg) no-repeat;background-size: cover;}
-	10% { opacity:0.98; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 2.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	20% { opacity:0.95; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	30% { opacity:0.92; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 7.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	40% { opacity:0.88; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 10%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	50% { opacity:0.84; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 12.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	60% { opacity:0.80; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 15%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	70% { opacity:0.76; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 17.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	80% { opacity:0.72; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 20%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	90% { opacity:0.70; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 22.50%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	100% { opacity:0.70; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 25%),  url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	10% { opacity:0.90; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 2.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	20% { opacity:0.85; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	30% { opacity:0.80; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 7.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	40% { opacity:0.75; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 10%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	50% { opacity:0.70; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 12.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	60% { opacity:0.75; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 15%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	70% { opacity:0.80; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 17.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	80% { opacity:0.85; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 20%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	90% { opacity:0.90; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 22.50%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+	100% { opacity:1; background: linear-gradient(transparent 100%, rgba(208, 77, 70, 0.75) 25%),  url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
 }
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
@@ -230,7 +237,7 @@ hr {
 	display: block; content:""; position: absolute; z-index:-1;
 	top:0; left: 0; right: 0; height: 100%;
 	background: linear-gradient(transparent, rgba(208, 77, 70, 0.75)), url(../img/ChemicalPlant_7.jpg) no-repeat;
-	animation:opacitySetter ease-in;
+	animation:opacitySetter ease-in infinite;
 	animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	animation-duration: 4s;
 	animation-delay: 0s;
