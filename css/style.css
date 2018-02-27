@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #656c6d;
@@ -7,10 +7,10 @@ body, html {
 	height: 100% !important;
 }
 h1 {
-	font-weight: 700;
+	font-weight: 400;
 }
 h1 strong {
-	font-weight: 900;
+	font-weight: 400;
 }
 h2 {
 	line-height: 20px;
@@ -34,7 +34,7 @@ p.intro {
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fanwood Text', serif;
 }
 a {
 	color: #333;
@@ -79,29 +79,6 @@ hr {
 	border: 0;
 }
 
-.subcaption {
-	color : #135a94;
-}
-
-.srm-logo {
-	height: 100px;
-	position: relative;
-	top: 0;
-	left: 2%;
-	margin: 1% -1%;
-}
-
-.header-button-custom {
-	height: 50px;
-	width: 150px;
-}
-
-@keyframes fa-color-change { 0% { color: white; } 50% { color: #8c6a06 ; } 100% { color: white}}
-
-.fa-design {
-	animation: fa-color-change 2s infinite;
-	/*color: #2e6da4;*/
-}
 /* Navigation */
 #nav {
 	z-index: 9999;
@@ -192,18 +169,54 @@ hr {
 }
 /* Home Section */
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes opacitySetter {
-	0% { opacity:1; background: linear-gradient(rgba(208, 77, 70, 0.25)100%, rgba(208, 77, 70, 0.25) 0%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	10% { opacity:0.90; background: linear-gradient(rgba(208, 77, 70, 0.25)100%, rgba(208, 77, 70, 0.25) 2.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	20% { opacity:0.80; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	30% { opacity:0.7; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 7.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	40% { opacity:0.6; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 10%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	50% { opacity:0.50; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 12.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	60% { opacity:0.6; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 15%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	70% { opacity:0.7; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 17.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	80% { opacity:0.8; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 20%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	90% { opacity:0.9; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 22.50%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
-	100% { opacity:1; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 25%),  url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}
+/*@keyframes opacitySetter {*/
+	/*0% { opacity:1; background: linear-gradient(rgba(208, 77, 70, 0.25)100%, rgba(208, 77, 70, 0.25) 0%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*10% { opacity:0.90; background: linear-gradient(rgba(208, 77, 70, 0.25)100%, rgba(208, 77, 70, 0.25) 2.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*20% { opacity:0.80; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*30% { opacity:0.7; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 7.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*40% { opacity:0.6; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 10%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*50% { opacity:0.50; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 12.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*60% { opacity:0.6; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 15%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*70% { opacity:0.7; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 17.5%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*80% { opacity:0.8; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 20%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*90% { opacity:0.9; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 22.50%), url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+	/*100% { opacity:1; background: linear-gradient(rgba(208, 77, 70, 0.25) 100%, rgba(208, 77, 70, 0.25) 25%),  url(../img/ChemicalPlant_7.jpg) no-repeat; background-size: cover;}*/
+/*}*/
+
+
+@keyframes showu {
+	0% {opacity:0;}
+	20% {opacity:1;}
+	80% {opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes slidei {
+	0% { margin-left:-1000px; }
+	20% { margin-left:-1000px; }
+	55% { margin-left:0px; }
+	100% { margin-left:0px; }
+}
+
+@keyframes revea {
+	0% {opacity:0;width:0px;}
+	20% {opacity:1;width:0px;}
+	30% {width:355px;}
+	80% {opacity:1;}
+	100% {opacity:0;width:355px;}
+}
+
+.reveal {
+	width: 0px;
+	animation: revea 7s infinite;
+}
+
+.showup {
+	animation: showu 7s infinite;
+}
+
+.slidein {
+	animation: slidei 7s infinite;
 }
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
@@ -232,7 +245,7 @@ hr {
 	display: block; content:""; position: absolute; z-index: -100;
 	top:0; left: 0; right: 0; height: 100%;
 	opacity: 0.95;
-	background: linear-gradient(rgba(41, 124, 230, 0.76), rgba(41, 124, 230, 0.76) 100%), url(../img/ChemicalPlant_7.jpg) no-repeat;
+	background: url(../img/ChemicalPlant_7.jpg) no-repeat;
 	/*animation:opacitySetter ease-in infinite;*/
 	/*animation-fill-mode:forwards;  !* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*!*/
 	/*animation-duration: 6s;*/
@@ -249,12 +262,8 @@ hr {
 .intro:after {
 	display: block; content:""; position: absolute; z-index: -1;
 	top:0; left: 0; right: 0; height: 100%;
-	opacity: 0.2;
-	background-color: #97cce6;
-	/*animation:opacitySetter ease-in;*/
-	/*animation-fill-mode:forwards;  !* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*!*/
-	/*animation-duration: 6s;*/
-	/*animation-delay: 0s;*/
+	opacity: 0.8;
+	background: linear-gradient(#eef2f3, #4e4376);
 	width: 100%;
 	padding: 100px 0;
 	text-align: center;
@@ -267,14 +276,37 @@ hr {
 
 
 .title-1 {
-	/*color: #135a94;*/
-	color: white;
-	animation: 1s ease-in 2s;
+	color: #336394;
+	/*animation: 1s ease-in 2s;*/
 }
 
 .title-2 {
-	/*color: #8c6a06;*/
+	/*color: #8c740e;*/
 	color: black;
+}
+
+.subcaption {
+	color: #336394;
+}
+
+.srm-logo {
+	height: 100px;
+	position: relative;
+	top: 0;
+	left: 2%;
+	margin: 1% -1%;
+}
+
+.header-button-custom {
+	height: 50px;
+	width: 150px;
+}
+
+@keyframes fa-color-change { 0% { color: white; } 50% { color: #8c6a06 ; } 100% { color: white}}
+
+.fa-design {
+	animation: fa-color-change 2s infinite;
+	/*color: #2e6da4;*/
 }
 
 .section-title.center {
@@ -605,6 +637,7 @@ ol.type li a:hover {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
 	margin-bottom: 0;
 }
+
 /* Contact Section */
 #contact {
 	padding: 100px 0 40px 0;
@@ -637,7 +670,7 @@ ol.type li a:hover {
 label {
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Fanwood Text', sans-serif;
 	float: left;
 }
 #contact .form-control {
@@ -747,17 +780,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 
 	.title-1 {
-		font-weight: 600;
+		font-weight: 300;
 	}
 
 	.title-2 {
-		font-weight: 600;
+		font-weight: 300;
 	}
 	.intro .intro-text {
 		max-width: 75%;
 	}
 	.intro .intro-text p {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Fanwood Text', serif;
 		font-size: 20px;
 		/*margin-bottom: 40px;*/
 		margin-top: 20px;
@@ -810,6 +843,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	.subcaption {
 		margin-left: 2%;
 	}
+	.date-header{
+		margin-left: 0%;
+	}
 
 	.srm-logo {
 		height: 50px;
@@ -847,17 +883,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 
 	.title-1 {
-		font-weight: 600;
+		font-weight: 300;
 	}
 
 	.title-2 {
-		font-weight: 600;
+		font-weight: 300;
 	}
 	.intro .intro-text {
 		max-width: 75%;
 	}
 	.intro .intro-text p {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Fanwood Text', serif;
 		font-size: 30px;
 		margin-bottom: 40px;
 		margin-top: 20px;
@@ -909,6 +945,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	.subcaption {
 		margin-left: 2%;
 	}
+	.date-header{
+		 margin-left: 19%;
+		align-self: center;
+	 }
+
 
 	.srm-logo {
 		height: 100px;
@@ -947,7 +988,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		padding: 0 20px 20px;
 	}
 	.subcaption {
-		margin-left: 6%;
+		margin-left: 11%;
+	}
+	.date-header{
+		margin-left: 14%;
 	}
 }
 
