@@ -979,7 +979,7 @@
                 <h4>MIKROTEK MACHINES LIMITED</h4>
                 <!--<small>MICROTEK MACHINES LIMTED</small> -->
               </div>
-              <img src="img/mikrotech.png" style="height: 100px;" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/mikrotech.png" style="height: 100px;" class="img-responsive" alt="MIKROTEK MACHINES LIMITED"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
@@ -994,22 +994,22 @@
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/ixar.png" title="INDUSTRIAL ALLIED AND RADIOGRAOHERS 8.5" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/ixar.png" title="INDUSTRIAL ALLIED AND RADIOGRAOHERS" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>INDUSTRIAL ALLIED AND RADIOGRAOHERS 8.5</h4>
+                <h4>INDUSTRIAL ALLIED AND RADIOGRAOHERS</h4>
                 <!--<small>Web Design</small> -->
               </div>
-              <img src="img/ixar.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/ixar.png" class="img-responsive" alt="INDUSTRIAL ALLIED AND RADIOGRAOHERS"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/its.png" title="RK INSPECTION AND SERVICES 2.5" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/its.png" title="RK INSPECTION AND SERVICES" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>RK INSPECTION AND SERVICES 2.5</h4>
+                <h4>RK INSPECTION AND SERVICES</h4>
                 <!--<small>Web Design</small> -->
               </div>
-              <img src="img/its.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/its.png" class="img-responsive" alt="RK INSPECTION AND SERVICES"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
@@ -1019,7 +1019,7 @@
                 <h4>ToyaM TECHNOLOGIES INDIA Pvt. Ltd.</h4>
                 <!--<small>App Development</small> -->
               </div>
-              <img src="img/toya.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/toya.png" class="img-responsive" alt="ToyaM TECHNOLOGIES INDIA Pvt. Ltd."> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
@@ -1029,7 +1029,7 @@
                 <h4>DEEPAK FERTILISERS AND PETROCHEMICALS CORPORATION LIMITED</h4>
                 <!--<small>Branding</small> -->
               </div>
-              <img src="img/deepak.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/deepak.png" class="img-responsive" alt="DEEPAK FERTILISERS AND PETROCHEMICALS CORPORATION LIMITED"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
@@ -1039,7 +1039,7 @@
                 <h4>SUMUKHA HITECH PRODUCT INDUSTRY</h4>
                 <!--<small>App Development, Branding</small>-->
               </div>
-              <img src="img/sumukha.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/sumukha.png" class="img-responsive" alt="SUMUKHA HITECH PRODUCT INDUSTRY"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3">
@@ -1049,7 +1049,7 @@
                 <h4>SOUTHERN INDIA SCIENTIFIC CORPORATION</h4>
                 <!--<small>Web Design</small> -->
               </div>
-              <img src="img/siscon.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/siscon.png" class="img-responsive" alt="SOUTHERN INDIA SCIENTIFIC CORPORATION"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 gaming">
@@ -1059,7 +1059,7 @@
                 <h4>FREEING INDIA</h4>
                 <!--<small>Web Design</small> -->
               </div>
-              <img src="img/freeing.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/freeing.png" class="img-responsive" alt="FREEING INDIA"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 gaming">
@@ -1069,7 +1069,7 @@
                 <h4>SEASONS</h4>
                 <!--<small>Web Design</small> -->
               </div>
-              <img src="img/seasons.png" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/seasons.png" class="img-responsive" alt="SEASONS"> </a> </div>
           </div>
         </div>
       </div>
@@ -1333,27 +1333,29 @@
   };
 
   function showInstruction(){
-    document.getElementById('paper_topics').style.display = 'none';
-    document.getElementById('paper_sample').style.display = 'none';
-    document.getElementById('paper_instructions').style.display = 'block';
+    $('#paper_sample').fadeOut('slow');
+    $('#paper_topics').fadeOut('slow');
+    $('#paper_instructions').fadeIn('slow');
   };
 
   function showTopics(){
-    document.getElementById('paper_instructions').style.display = 'none';
-    document.getElementById('paper_sample').style.display = 'none';
-    document.getElementById('paper_topics').style.display = 'block';
+    $('#paper_instructions').fadeOut('slow');
+    $('#paper_sample').fadeOut('slow');
+    $('#paper_topics').fadeIn('slow');
   };
 
   function showSample(){
-    document.getElementById('paper_instructions').style.display = 'none';
-    document.getElementById('paper_topics').style.display = 'none';
-    document.getElementById('paper_sample').style.display = 'block';
+    $('#paper_instructions').fadeOut('slow');
+    $('#paper_topics').fadeOut('slow');
+    $('#paper_sample').fadeIn('slow');
+
   };
 
   $(document).ready(function() {
-    document.getElementById('paper_instructions').style.display = 'block';
-    document.getElementById('paper_topics').style.display = 'none';
-    document.getElementById('paper_sample').style.display = 'none';
+    $('#paper_sample').fadeOut('slow');
+    $('#paper_topics').fadeOut('slow');
+    $('#paper_instructions').fadeIn('slow');
+
   });
 
   function showAll(){
