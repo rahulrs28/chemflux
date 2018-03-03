@@ -79,6 +79,11 @@ hr {
 	border: 0;
 }
 
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
 /* Navigation */
 #nav {
 	z-index: 9999;
@@ -144,7 +149,7 @@ hr {
 	padding: 10px 20px;
 	margin: 1% 28%;
 	font-size: 16px;
-	border-radius: 0;
+	border-radius: 10px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #fff;
@@ -191,9 +196,18 @@ hr {
 	100% {opacity:0;}
 }
 
+
+@keyframes showu1 {
+	0% {opacity:0;
+		color: black;}
+	20% {opacity:1; color: #2e6da4}
+	80% {opacity:1; color: black}
+	100% {opacity:0; color: #2e6da4}
+}
+
 @keyframes slidei {
-	0% { margin-left:-1000px; }
-	20% { margin-left:-1000px; }
+	0% { margin-left:-8000px; }
+	20% { margin-left:-8000px; }
 	55% { margin-left:0px; }
 	100% { margin-left:0px; }
 }
@@ -206,17 +220,25 @@ hr {
 	100% {opacity:0;width:355px;}
 }
 
+.glitter{
+	animation: showu 2s infinite ;
+}
+
+.glowing{
+	animation: showu1 2s infinite ;
+}
+
 .reveal {
 	width: 0px;
-	animation: revea 7s infinite;
+	animation: revea 7s;
 }
 
 .showup {
-	animation: showu 7s infinite;
+	animation: showu 7s;
 }
 
 .slidein {
-	animation: slidei 7s infinite;
+	animation: slidei 7s;
 }
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
@@ -321,7 +343,7 @@ hr {
 	margin-left: 10px;
 }
 #about img {
-	border-radius: 50%;
+	border-radius: 13%;
 	width: 200px;
 	height: 200px;
 	display: inline-block;
@@ -402,6 +424,7 @@ ol.type li a {
 	background: #7bc3d1;
 	color: #fff;
 	padding: 6px 14px;
+    border-radius: 10px 10px 10px 10px;
 }
 ol.type li a.active {
 	background: #121d1f;
@@ -771,7 +794,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		color: #fff;
 	}
 	.intro H1 {
-		font-size: 50px;
+		font-size: 30px;
 		font-weight: 500;
 		letter-spacing: -2px;
 	}
@@ -806,7 +829,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 
 	.intro-text {
-		padding-top: 100px;
+		padding-top: 60px;
 		padding-bottom: 250px;
 		padding-left: 15%;
 	}
@@ -843,8 +866,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	.subcaption {
 		margin-left: 2%;
 	}
+
 	.date-header{
 		margin-left: 0%;
+	}
+
+	.theme-details{
+		margin-left: -1%;
 	}
 
 	.srm-logo {
@@ -950,6 +978,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		align-self: center;
 	 }
 
+	.theme-header {
+		margin-left: 23%;
+	}
+	.theme-details {
+		margin-left: 0%;
+		align-self: center;
+	}
+
 
 	.srm-logo {
 		height: 100px;
@@ -992,6 +1028,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 	.date-header{
 		margin-left: 14%;
+	}
+
+	.theme-details{
+		margin-left: 0%;
 	}
 }
 
