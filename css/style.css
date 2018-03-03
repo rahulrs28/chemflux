@@ -198,11 +198,26 @@ hr {
 
 
 @keyframes showu1 {
-	0% {opacity:0;
-		color: black;}
-	20% {opacity:1; color: #2e6da4}
-	80% {opacity:1; color: black}
-	100% {opacity:0; color: #2e6da4}
+	0% {opacity:1;
+		color: #0a4f94;
+		text-shadow: -4px 6px 4px rgb(138, 138, 138);}
+	20% {opacity:1; color: #050505;
+		text-shadow: -4px 6px 4px rgb(10, 79, 148);
+	}
+	/*30% {opacity:1; color: #050505;text-shadow: -4px 6px 4px rgb(7, 93, 148);*/
+	/*}*/
+	40% {opacity:1; color: #020202; text-shadow: -4px 6px 4px rgb(7, 93, 148);
+	}
+	/*50% {opacity:1; color: #020202;text-shadow: -4px 6px 4px rgb(7, 93, 148);*/
+	/*}*/
+	60% {opacity:1; color: #0a4f94; text-shadow: -4px 6px 4px rgb(138, 138, 138);
+	}
+	/*70% {opacity:1; color: black; text-shadow: -4px 6px 4px rgb(7, 93, 148);}*/
+	80% {opacity:1; color: #020202; text-shadow: -4px 6px 4px rgb(7, 93, 148);
+	}
+	/*90% {opacity:1; color: black; text-shadow: -4px 6px 4px rgb(7, 93, 148);}*/
+	100% {opacity:1; color: #0a4f94; text-shadow: -4px 6px 4px rgba(138, 138, 138, 0.97);
+	}
 }
 
 @keyframes slidei {
@@ -225,12 +240,18 @@ hr {
 }
 
 .glowing{
-	animation: showu1 2s infinite ;
+	animation: showu1 5s infinite ;
+	letter-spacing: 0em;
 }
 
 .reveal {
 	width: 0px;
 	animation: revea 7s;
+}
+
+.elegantShow{
+	letter-spacing: 0em;
+	text-shadow: -4px 6px 4px rgba(144, 150, 150, 1);
 }
 
 .showup {
@@ -417,8 +438,8 @@ ul.cat li {
 	display: inline-block;
 }
 ol.type li {
-	display: inline-block;
-	margin-left: 20px;
+	display: inline;
+	margin-left: -1px;
 }
 ol.type li a {
 	background: #7bc3d1;
@@ -787,6 +808,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* Media Queries */
 @media(min-width:100px) {
+
+	h2{
+		font-size: 25px;
+	}
 	.intro {
 		height: 100%;
 		padding: 0;
