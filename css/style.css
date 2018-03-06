@@ -806,6 +806,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #7bc3d1;
 }
 
+.z-depth-1-half {
+	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
 /* Media Queries */
 @media(min-width:100px) {
 
@@ -1080,3 +1083,4 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 10px 100px 20px 20px;
 }
 }
+
