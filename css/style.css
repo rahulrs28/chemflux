@@ -809,6 +809,21 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .z-depth-1-half {
 	box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 }
+
+.rounded {
+	height: 195px;
+	width: 180px ;
+	border-radius: 0.25rem !important;
+}
+
+.student-stuff {
+	margin-bottom: 5%;
+}
+
+.grey-text {
+	font-family: inherit;
+}
+
 /* Media Queries */
 @media(min-width:100px) {
 
